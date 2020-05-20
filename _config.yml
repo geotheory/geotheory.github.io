@@ -1,0 +1,39 @@
+title: Geotheory
+author: Robin Edwards
+email: geotheory1@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Occasional musings on maps, coding and data science
+baseurl: ""
+google_analytics: 'UA-113140443-1'
+url: "https://geotheory.github.io"
+include: ["_pages"]
+collections_dir: _collections
+twitter_username: geotheory
+github_username:  geotheory
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+collections:
+  articles:
+    output: true
+  letters:
+    output: true
+  speeches:
+    output: true
+  tutorials:
+    output: true

@@ -1,64 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Geotheory Data Science</title>
-	<meta charset="utf-8">
-	<style>
+---
+layout: default
+---
 
-* { margin: 0; padding: 0; }
+{% include index/columns.html %}
 
-html {
-	background: url('europe.png') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-  z-index: -1;
-}
+<section class="row m-2">
+  <div class="col-md-6">
+    {% include index/categories.html %}
+  </div>
+  <div class="col-md-6">
+    {% include index/favourites.html %}
+  </div>
+</section>
 
-#trans{
-	width: 100vw;
-	height: 100vh;
-	background-color: rgba(255,255,255, .8);
-	z-index: 0;
-}
-
-pre{
-	position: fixed;
-	top: 0px; left: 0px;
-	font-size: 3.5vw;
-	z-index: 1;
-}
-
-img { width: 8vw; height: 8vw; padding: 1vw; opacity: .2;}
-img:hover { opacity: .7; }
-
-</style>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113140443-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-113140443-1');
-</script>
-
-
-</head>
-<body>
-	<div style="display: none;"><img src="europe.png"/></div>
-	<div id='trans'></div>
-<pre>
-
-
-	Robin Edwards
-	London, UK
-	@geotheory
-
-	I do data science, GIS and maps.
-
-	Check out my friends <a href='http://www.missingmaps.org/' target='_blank'>Missing Maps</a>
-
-	<span><a href='//github.com/geotheory' target='_blank'><img src="svg/433-github.svg"></a><a href='//twitter.com/geotheory' target='_blank'><img src="svg/407-twitter.svg"></a><a href='//stackexchange.com/users/1181375/geotheory' target='_blank'><img src="svg/465-stackoverflow.svg"></a><a href='//www.linkedin.com/in/robin-e-8b516860' target='_blank'><img src="svg/458-linkedin.svg"></a></span>
+{% include index/video.html %}
