@@ -28,12 +28,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# Compiles the posts
 collections:
   articles:
-    output: true
-  letters:
-    output: true
-  speeches:
-    output: true
-  tutorials:
     output: true

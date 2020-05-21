@@ -7,14 +7,18 @@
           <div class="col-md-8">
             <div class="card-body">
               <a class="text-reset" href="{{ item.url | prepend: site.baseurl}}">
-                <h5 class="card-title">{{ item.title }}</h5>
+                {% assign post_name = item.title %}
+                {% if item.description %}
+                {% assign post_name = post_name | append: " - " | append: item.description %}
+                {% endif %}
+                <h5 class="card-title">{{ post_name }}</h5>
               </a>
-              <p class="card-text">{{ item.description }}</p>
+              <p class="card-text">{{ item.excerpt }}</p>
               <p class="card-text"><small class="text-muted">{{ item.date | date_to_long_string }}</small></p>
             </div>
           </div>
           <div class="col-md-4">
-            <img src="{{item.image}}" class="card-img" alt="...">
+            <img src="{{item.image}}" class="card-img" alt="..." style="-webkit-filter: grayscale(100%); filter: grayscale(100%);">
           </div>
         </div>
       </div>

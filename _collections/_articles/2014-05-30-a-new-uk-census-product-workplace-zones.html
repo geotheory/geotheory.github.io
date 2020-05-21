@@ -1,0 +1,219 @@
+---
+layout: post
+title:  A new UK Census product – Workplace Zones
+date:   2014-05-30 14:11:02 +0200
+image: /assets/images/workplace-zones/london_religion_grt.png
+header-img: /assets/images/banner-amazon.png
+excerpt_separator: <!--more-->
+---
+
+&nbsp;
+
+<p>If you follow UK statistics you might know the Office of National Statistics has been developing a new set of geographies for reporting workplace-focused data from the 2011 Census, called <a target="_BLANK" href="http://www.ons.gov.uk/ons/guide-method/census/2011/census-data/2011-census-prospectus/new-developments-for-2011-census-results/2011-census-geography/workplace-zones/index.html" target="_blank">Workplace Zones</a>. &nbsp;The zones have been developed (following a pilot by the University of Southampton)&nbsp;using the existing census Output Areas as a starting point, but then merging and splitting these to create new shapes containing “consistent numbers of workers”. <!--more--> This is somewhat aspirational considering that, in London alone, the zones range from 100 to 11,000 workers (upper/lower quartiles at 310/550 respectively), indicating a degree of variance. &nbsp;This notwithstanding, Workplace Zones and the <a target="_BLANK" href="http://www.nomisweb.co.uk/census/2011/all_tables?release=5.2a" target="_blank">new statistics than were published for them last week</a> are a great new data source adding significant potential value to research into urban dynamics and workplace-related trends more generally. &nbsp;Here is a map of the boundaries of the new zones, with the centroid points also plotted as I’ve used these points for plotting the statistics:</p>
+
+<p><a target="_BLANK" href="/assets/images/workplace-zones/London_workplace_zones_grt-1024x819.png"><img src="/assets/images/workplace-zones/London_workplace_zones_grt-1024x819.png" alt="London_workplace_zones_grt" width="1024" height="819" class="aligncenter size-large wp-image-852" srcset="/assets/images/workplace-zones/London_workplace_zones_grt-1024x819.png 1024w, /assets/images/workplace-zones/London_workplace_zones_grt-300x240.png 300w" sizes="(max-width: 1024px) 100vw, 1024px"></a></p>
+
+<p>Here I’ve mapped some of the more interesting stories I’ve spotted so far in the data for London. &nbsp;For each dataset I’ve made a map each for both Greater and Central London areas, the reason being that employment densities in the centre are so much higher than elsewhere that for any map of Greater London the central zones are little more than pixels. This centre/periphery disparity also presents a challenge for data visualisation as the customary choropleth method (colouring the zones to represent data) leads to the map’s ‘narrative’ being overly dominated by relatively low employment density areas.  Instead I’ve chosen to use points to represent the data, which gives a much better idea of employment densities across the capital. Some point over-plotting seems a fair price to pay for a less misleading map.  All the maps group the data by decile (10 quantiles), so the break of the 5th and 6th deciles is the map area’s average (rounded).  The Central London maps have their own colour scales. </p>
+
+<p>Take a look and see what you think.  For visualisation enthusiasts, at the end of the post I compare one of these to a choropleth and cartogram of the same data.</p>
+
+&nbsp;
+
+<h5>Male/female proportions in the workplace..</h5>
+
+<div><span>
+<a target="_BLANK" href="/assets/images/workplace-zones/london_sex_grt.png"><img class="alignleft" alt="london_sex_grt" src="/assets/images/workplace-zones/london_sex_grt_tmb.png" /></a>
+
+<a target="_BLANK" href="/assets/images/workplace-zones/london_sex_cen.png"><img class="alignright" alt="london_sex_cen" src="/assets/images/workplace-zones/london_sex_cen_tmb.png" /></a>
+</span></div>
+
+&nbsp;
+
+<p>Some interesting patterns emerge of higher female workforce proportions in parts of west-central London, and in the town centres across in Greater London.  It’s no surprise that the City remains very male-dominated.</p>
+
+&nbsp;
+
+<h5>Who works the longest hours?</h5>
+
+<div><span>
+<a target="_BLANK" href="/assets/images/workplace-zones/london_hours_grt.png"><img src="/assets/images/workplace-zones/london_hours_grt_tmb.png" alt="london_hours_grt" class="alignleft" /></a>
+
+<a target="_BLANK" href="/assets/images/workplace-zones/london_hours_cen.png"><img src="/assets/images/workplace-zones/london_hours_cen_tmb.png" alt="london_hours_cen" class="alignright" /></a>
+</span></div>
+
+&nbsp;
+
+<p>Quite a patchy story.  Central London, the City and Docklands in particular, work the longest hours by and large.  Towns outside the centre tend to work least overtime.</p>
+
+&nbsp;
+
+<h5>How does religious belief break down in workplaces across the city?</h5>
+
+<div><span>
+<a target="_BLANK" href="/assets/images/workplace-zones/london_religion_grt.png"><img src="/assets/images/workplace-zones/london_religion_grt_tmb.png" alt="london_religion_grt" class="alignleft" /></a>
+
+<a target="_BLANK" href="/assets/images/workplace-zones/london_religion_cen.png"><img src="/assets/images/workplace-zones/london_religion_cen_tmb.png" alt="london_religion_cen" class="alignright" /></a>
+</span></div>
+
+&nbsp;
+
+<p>North London workplaces emerge as generally more religious than South of the river (although the area stretching north from Croydon is a notable exception).  There is also quite a strong non-religious region stretching northwards from the centre.  Central London itself shows some strong patterns, with the religious City and districts to the West clashing with the far more non-religious workplaces across Soho, Bloomsbury, Angel and Clarkenwell.</p>
+
+&nbsp;
+
+<h5>Which workplaces have healthier workers?</h5>
+
+<div><span>
+<a target="_BLANK" href="/assets/images/workplace-zones/london_health_grt.png"><img src="/assets/images/workplace-zones/london_health_grt_tmb.png" alt="Map of Which workplaces have healthier workers" class="alignleft" /></a>
+
+<a target="_BLANK" href="/assets/images/workplace-zones/london_health_cen.png"><img src="/assets/images/workplace-zones/london_health_cen_tmb.png" alt="Map of Which workplaces have healthier workers" class="alignright" /></a>
+</span></div>
+
+&nbsp;
+
+<p>No surprise that the healthier workplaces tend be in higher earning parts of the city.</p>
+
+&nbsp;
+
+<h5>Which workplaces have higher education levels?</h5>
+
+<div><span>
+<a target="_BLANK" href="/assets/images/workplace-zones/london_university_grt.png"><img src="/assets/images/workplace-zones/london_university_grt_tmb.png" alt="Map of Which workplaces have higher education levels" class="alignleft" /></a>
+
+<a target="_BLANK" href="/assets/images/workplace-zones/london_university_cen.png"><img src="/assets/images/workplace-zones/london_university_cen_tmb.png" alt="Map of Which workplaces have higher education levels" class="alignright" /></a>
+</span></div>
+
+&nbsp;
+
+<p>Here we’re seing broadly similar patterns to workplace employee health levels.</p>
+
+&nbsp;
+
+<h5>Which workplaces are more culturally diverse?</h5>
+
+<div><span>
+<a target="_BLANK" href="/assets/images/workplace-zones/london_language_grt.png"><img src="/assets/images/workplace-zones/london_language_grt_tmb.png" alt="Map of Which workplaces are more culturally diverse" class="alignleft" /></a>
+
+<a target="_BLANK" href="/assets/images/workplace-zones/london_language_cen.png"><img src="/assets/images/workplace-zones/london_language_cen_tmb.png" alt="Map of Which workplaces are more culturally diverse" class="alignright" /></a>
+</span></div>
+
+&nbsp;
+
+<p>Here I’ve used European first languages (excluding English) to represent ‘diversity’.  While certainly not the best or only proxy, it does relate closely to some of the racially-associated political debates (particularly immigration from Europe) that have dominated public debate in recent weeks.  I’ll leave the map interpretations to the reader, but it should be noted that this category includes many non-permanent immigrants (such as workers on temporary work permits), as well as some large non-European groups such as employees originally from Latin America.</p>
+
+&nbsp;
+
+<h5>How far do people travel to work?</h5>
+
+<div><span>
+<a target="_BLANK" href="/assets/images/workplace-zones/london_dist_to_work_grt.png"><img src="/assets/images/workplace-zones/london_dist_to_work_grt_tmb.png" alt="Map of How far do people travel to work" class="alignleft" /></a>
+
+<a target="_BLANK" href="/assets/images/workplace-zones/london_dist_to_work_cen.png"><img src="/assets/images/workplace-zones/london_dist_to_work_cen_tmb.png" alt="Map of How far do people travel to work" class="alignright" /></a>
+</span></div>
+
+&nbsp;
+
+<p>No-one will be surprised to see the poor commuters to Central London tend to cover the longest distances.  Towns outside the centre tend to have the shortest commutes, but workers in and around Heathrow tend to have longer journeys.  In the centre there’s quite a strong pattern of longer commuted for workers in the City, Westminster and Victoria areas compared to other areas, perhaps reflecting stronger Home County residential demographics.</p>
+
+&nbsp;
+
+<h5>How do people get to work?</h5>
+
+<p>The following categories represent the primary mode of transport to work that respondents reported:</p>
+
+<h6>by train..</h6>
+
+<div><span>
+<a target="_BLANK" href="/assets/images/workplace-zones/london_travel_train_grt.png"><img src="/assets/images/workplace-zones/london_travel_train_grt_tmb.png" alt="Map of proportion that travel by train" class="alignleft" /></a>
+
+<a target="_BLANK" href="/assets/images/workplace-zones/london_travel_train_cen.png"><img src="/assets/images/workplace-zones/london_travel_train_cen_tmb.png" alt="Map of proportion that travel by train" class="alignright" /></a>
+</span></div>
+
+&nbsp;
+
+<h6>by tube and tram..</h6>
+
+<div><span>
+<a target="_BLANK" href="/assets/images/workplace-zones/london_travel_tube_grt.png"><img src="/assets/images/workplace-zones/london_travel_tube_grt_tmb.png" alt="Map of proportion that travel by tube and tram" class="alignleft" /></a>
+
+<a target="_BLANK" href="/assets/images/workplace-zones/london_travel_tube_cen.png"><img src="/assets/images/workplace-zones/london_travel_tube_cen_tmb.png" alt="Map of proportion that travel by tube and tram" class="alignright" /></a>
+</span></div>
+
+&nbsp;
+
+<p>We see a strong contrast between Central London workplaces that are typically accessed by train compared to those accessed by Tube and other modes of rail, with the City and Westminster’s heavier dependence on trains reflecting the longer commutes of their workers, as illustrated in the travel distances map above.</p>
+
+&nbsp;
+
+<h6>by bicycle..</h6>
+
+<div><span>
+<a target="_BLANK" href="/assets/images/workplace-zones/london_travel_bike_grt.png"><img src="/assets/images/workplace-zones/london_travel_bike_grt_tmb.png" alt="Map of proportion that travel by bicycle" class="alignleft" /></a>
+
+<a target="_BLANK" href="/assets/images/workplace-zones/london_travel_bike_cen.png"><img src="/assets/images/workplace-zones/london_travel_bike_cen_tmb.png" alt="Map of proportion that travel by bicycle" class="alignright" /></a>
+</span></div>
+
+&nbsp;
+
+<h6>and walking..</h6>
+
+<div><span>
+<a target="_BLANK" href="/assets/images/workplace-zones/london_travel_walk_grt.png"><img src="/assets/images/workplace-zones/london_travel_walk_grt_tmb.png" alt="Map of proportion that travel on foot" class="alignleft" /></a>
+
+<a target="_BLANK" href="/assets/images/workplace-zones/london_travel_walk_cen.png"><img src="/assets/images/workplace-zones/london_travel_walk_cen_tmb.png" alt="Map of proportion that travel on foot" class="alignright" /></a>
+</span></div>
+
+&nbsp;
+
+<p>These categories are a little less clear in terms of Central London spatial patterns other than some notable cycle-to-work hot-spots in Soho, Clerkenwell and Shoreditch.  Outside the centre, bicycle is a lesser-used mode of transport, but many more people walk to work in town areas.</p>
+
+&nbsp;
+
+<h4 id="altmethods">Alternative methods for visualisation</h4>
+
+&nbsp;
+
+<p>For the purpose of comparing methods of visualisation here are three approaches for the same map – the travel to work distances.  The first is a repeat of above for convenience:</p>
+
+<p><a target="_BLANK" href="/assets/images/workplace-zones/london_dist_to_work_grt.png"><img src="/assets/images/workplace-zones/london_dist_to_work_grt-1024x819.png" alt="london_dist_to_work_grt" width="1024" height="819" class="aligncenter size-large wp-image-925" srcset="/assets/images/workplace-zones/london_dist_to_work_grt-1024x819.png 1024w, /assets/images/workplace-zones/london_dist_to_work_grt-300x240.png 300w" sizes="(max-width: 1024px) 100vw, 1024px"></a></p>
+
+&nbsp;
+
+<h5>Here is the fairly customary choropleth..</h5>
+
+<p><a target="_BLANK" href="/assets/images/workplace-zones/london_dist_to_work_choropleth-1024x819.png"><img src="/assets/images/workplace-zones/london_dist_to_work_choropleth-1024x819.png" alt="london_dist_to_work_choropleth" width="1024" height="819" class="aligncenter size-large wp-image-976" srcset="/assets/images/workplace-zones/london_dist_to_work_choropleth-1024x819.png 1024w, /assets/images/workplace-zones/london_dist_to_work_choropleth-440x352.png 440w" sizes="(max-width: 1024px) 100vw, 1024px"></a></p>
+
+&nbsp;
+
+<h5>Lastly the cartogram approach..</h5>
+
+<p><a target="_BLANK" href="/assets/images/workplace-zones/london_dist_to_work_cartogram-1024x819.png"><img src="/assets/images/workplace-zones/london_dist_to_work_cartogram-1024x819.png" alt="london_dist_to_work_cartogram" width="1024" height="819" class="aligncenter size-large wp-image-978" srcset="/assets/images/workplace-zones/london_dist_to_work_cartogram-1024x819.png 1024w, /assets/images/workplace-zones/london_dist_to_work_cartogram-440x352.png 440w" sizes="(max-width: 1024px) 100vw, 1024px"></a></p>
+
+&nbsp;
+
+<p>In my opinion the choropleth is least useful as it (a) renders half the data unreadable (in the centre.. the most economically important zone), and (b) precludes any sense of workplace densities.  The cartogram (made with the brilliant little <a target="_BLANK" href="http://scapetoad.choros.ch/" target="_blank">scapetoad </a>app) calculates zonal areas proportional to their working populations, which actually gives a nice sense of the quantitative distributions in the data, but of course it reduces the reader’s ability to accurately interpret locations, and again you lose the sense of where the peripheral high employment density areas are.  In my opinion the points win, but I’d be interested to hear other views.</p>
+
+
+<p><i>[Previously published at geotheory.co.uk]</i></p>
+ 
+ <style>
+.alignleft {
+  float: left;
+  margin: 0 1.5em 1.5em 0;
+  text-align: left;
+}
+.alignright {
+  float: right;
+  margin: 0 0 .4em 1.4em;
+}
+.alignleft, .alignright {
+  margin-bottom: 2em;
+  width: 50%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+h5 { margin-top: 30px; margin-bottom: 30px; }
+p { margin-top: 20px; margin-bottom: 20px; font-size: 1.15em;}
+</style>

@@ -2,15 +2,20 @@
 layout: default
 ---
 
-{% include index/columns.html %}
+{% include sections/last_post.html last_post=site.articles.last%}
+{% include sections/items_except_last.html items=site.articles%}
 
-<section class="row m-2">
+{% comment %}
+<!-- {% include index/columns.html %} -->
+
+<!-- <section class="row m-2">
   <div class="col-md-6">
     {% include index/categories.html %}
   </div>
   <div class="col-md-6">
     {% include index/favourites.html %}
   </div>
-</section>
+</section>-->
 
-{% include index/video.html %}
+<!-- {% include index/video.html %} -->
+{% endcomment %}
