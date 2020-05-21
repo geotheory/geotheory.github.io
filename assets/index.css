@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
+p {
+  font-size: 1.1em;
+}
+
 .zoom {
    transition: all 0.25s ease;
 }
